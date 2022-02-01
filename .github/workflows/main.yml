@@ -1,51 +1,33 @@
-# Workflow to build and deploy to your GitHub Pages repo.
-
-# Edit your project details here.
-# Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
-env:
-  githubEmail: ${{ secrets.EMAIL }}
-  deployToRepo: atomicfeast.github.io/space-tourism
-
-name: Github Pages Astro CI
+name: Deploy Astro to GitHub Pages
 
 on:
-  # Triggers the workflow on push and pull request events but only for the main branch
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-  # Allows you to run this workflow manually from the Actions tab.
-  workflow_dispatch:
+    branches:
+      - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [16.x]
+
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Install dependencies with npm
-      - name: Install dependencies
-        run: npm ci
-
-      # Build the project and add .nojekyll file to supress default behaviour
-      - name: Build
-        run: |
-          npm run build
-          touch ./dist/.nojekyll
-
-      # Push to your pages repo
-      - name: Push to pages repo
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      - name: Get files
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
-          source-directory: 'dist'
-          destination-github-username: ${{ github.actor }}
-          destination-repository-name: ${{ env.deployToRepo }}
-          user-email: ${{ env.githubEmail }}
-          commit-message: Deploy ORIGIN_COMMIT
-          target-branch: gh-pages
-
+          node-version: ${{ matrix.node-version }}
+      - name: Install packages
+        run: yarn
+      - name: Build project
+        run: yarn build
+      - name: Add .nojekyll file
+        run: touch ./dist/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: dist
