@@ -38,6 +38,7 @@ jobs:
 
       # Push to your pages repo
       - name: Push to pages repo
+        uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
