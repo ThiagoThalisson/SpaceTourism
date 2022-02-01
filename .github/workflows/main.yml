@@ -4,7 +4,7 @@
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
   githubEmail: ${{ secrets.EMAIL }}
-  deployToRepo: atomicfeast.github.io/space-tourism/
+  deployToRepo: atomicfeast.github.io/space-tourism
 
 name: Github Pages Astro CI
 
@@ -48,3 +48,4 @@ jobs:
           user-email: ${{ env.githubEmail }}
           commit-message: Deploy ORIGIN_COMMIT
           target-branch: gh-pages
+
