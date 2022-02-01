@@ -4,7 +4,7 @@
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
   githubEmail: ${{ secrets.EMAIL }}
-  deployToRepo: atomicfeast.github.io
+  deployToRepo: atomicfeast.github.io/space-tourism
 
 name: Github Pages Astro CI
 
@@ -38,7 +38,6 @@ jobs:
 
       # Push to your pages repo
       - name: Push to pages repo
-        uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
