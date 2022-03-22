@@ -1,1 +1,41 @@
+:root {
+  // 1rem = 16px
+  --primary-color: orange;
+  --green: hsl(150, 68%, 54%);
+  --blue: hsl(213, 64%, 59%);
+  --orange: hsl(32, 100%, 49%);
+  --fs-medium: 2rem;
+}
 
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unordered-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.list-item {
+  margin: 2rem;
+  list-style: none;
+}
+
+.item-link {
+  font-size: var(--fs-medium);
+  text-decoration: none;
+  color: var(--orange);
+  padding: 0.8rem;
+}
+
+.item-link:hover {
+  font-size: 5rem;
+  color: hsl(0, 100%, 68%);
+  background: hsl(213, 64%, 59%);
+  padding: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 45.9%) 2px 1px 20px 0;
+  border-radius: 0.5rem;
+  transition: all 200ms ease;
+}

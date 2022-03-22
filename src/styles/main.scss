@@ -1,2 +1,10 @@
-@use './layout/index' as *;
-@use './base/index' as *;
+// @use "./abstracts/index" as *;
+// @use "./animations/index" as *;
+@use "./base/index" as *;
+@use "./layout/index" as *;
+// @use "./pages/index" as *;
+// @use "./themes/index" as *;
+
+:root {
+  --primary-color-blue: blue;
+}
