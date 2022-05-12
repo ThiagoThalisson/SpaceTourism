@@ -19,7 +19,7 @@ export function Navbar() {
                     </li>
         
                     <li className="list-item">
-                        <a href="/space-tourism/destination" className="item-link"><span aria-hidden="true">01</span>Destination</a>
+                    <Link className="item-link" to="/space-tourism/destination"><span aria-hidden="true">00</span>Destination</Link>
                     </li>
         
                     <li className="list-item">

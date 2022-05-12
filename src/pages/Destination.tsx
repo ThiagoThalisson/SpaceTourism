@@ -4,5 +4,5 @@ export function Destination() {
             <title>Space Travel - Destination</title>
             <h1>Batata</h1>
         </>
-        )
-    }
+    )
+}
