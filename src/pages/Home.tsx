@@ -5,7 +5,6 @@ export function Home() {
         <>
             <title>Space Travel - Home</title>
             <h1>Destination</h1>
-            <Navbar />
         </>
     )
 

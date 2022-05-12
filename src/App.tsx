@@ -6,13 +6,16 @@ import {
   Route
 } from 'react-router-dom'
 
-// import { Navbar } from './pages/Navbar'
+import { Navbar } from './components/Navbar'
 
 import './styles/main.scss'
 
 export default function App() {
   return (
-    <Router> 
+    <Router>
+
+      <Navbar />
+
       <Routes>
 
         <Route path="/" element={<Home />} />
