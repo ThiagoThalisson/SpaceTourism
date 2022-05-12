@@ -1,7 +1,7 @@
 import { Home } from './pages/Home'
 import { Destination } from './pages/Destination'
 import { 
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route
 } from 'react-router-dom'
@@ -15,8 +15,8 @@ export default function App() {
     <Router> 
       <Routes>
 
-      <Route path="/space-tourism" element={<Home />} />
-      <Route path="/space-tourism/destination" element={<Destination />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/destination" element={<Destination />} />
 
       </Routes>
     </Router>

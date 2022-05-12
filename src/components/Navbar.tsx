@@ -15,11 +15,11 @@ export function Navbar() {
             <nav className="nav">
                 <ul id="primary-navigation" className="primary-navigation">
                     <li className="list-item">
-                        <Link className="item-link" to="/space-tourism"><span aria-hidden="true">00</span>Home</Link>
+                        <Link className="item-link" to="/"><span aria-hidden="true">00</span>Home</Link>
                     </li>
         
                     <li className="list-item">
-                    <Link className="item-link" to="/space-tourism/destination"><span aria-hidden="true">00</span>Destination</Link>
+                    <Link className="item-link" to="/destination"><span aria-hidden="true">00</span>Destination</Link>
                     </li>
         
                     <li className="list-item">
