@@ -1,6 +1,4 @@
 <h1 id="SpaceTourism" align="center">🚀 <a href="https://atomicfeast.github.io/SpaceTourism/">Space Tourism</a></h1>
-🚀 A website made based on a Kevin Powell video and Frontend Mentor
-
 <div align="center">
   <table>
     <tr>
@@ -10,6 +8,11 @@
    </tr>
   </table>
 </div>
+
+---
+
+🚀 A website made based on a Kevin Powell video and Frontend Mentor
+
 
 <h1>Purpose</h1>
 This is a project from Frontend Mentor called <a target="_blank" href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Space Tourism</a> that is being developed to present my skills in reproducing firmly designs from figma.
