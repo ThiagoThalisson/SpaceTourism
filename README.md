@@ -12,6 +12,7 @@
 ---
 
 🚀 A website made based on a Kevin Powell video and Frontend Mentor
+<br>
 <sub>The figma design was NOT made by me (Credits To Frontend Mentor Again)</sub>
 
 
