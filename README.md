@@ -39,4 +39,8 @@ This is a project from Frontend Mentor called <a target="_blank" href="https://w
   <li><a target="_blank" href="https://scrimba.com/learn/spacetravel">Kevin Powell Srimba Space Travel Course</a>
 </ul>
 
+<h4>License</h4>
 
+This project is under the Apache license. See the [LICENSE](LICENSE) file for details.
+
+[⬆ Back To Top](#SpaceTourism)<br>
