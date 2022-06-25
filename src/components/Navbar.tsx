@@ -23,11 +23,11 @@ export function Navbar() {
                     </li>
         
                     <li className="list-item">
-                        <a href="/space-tourism/crew" className="item-link"><span aria-hidden="true">02</span>Crew</a>
+                        <a href="/crew" className="item-link"><span aria-hidden="true">02</span>Crew</a>
                     </li>
         
                     <li className="list-item">
-                        <a href="/space-tourism/technology" className="item-link"><span aria-hidden="true">03</span>Technology</a>
+                        <a href="/technology" className="item-link"><span aria-hidden="true">03</span>Technology</a>
                     </li>
                 </ul>
             </nav>
