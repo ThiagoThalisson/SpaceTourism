@@ -12,6 +12,7 @@
 ---
 
 🚀 A website made based on a Kevin Powell video and Frontend Mentor
+<sub>The figma design was NOT made by me (Credits To Frontend Mentor Again)</sub>
 
 
 <h1>Purpose</h1>
@@ -35,7 +36,6 @@ This is a project from Frontend Mentor called <a target="_blank" href="https://w
   <li><a target="_blank" href="https://www.figma.com/file/J8XcEadukeiqLvNbkJpQa7/space-tourism-website?node-id=0%3A1">Figma File (From FrontEnd Mentor)</a></li>
   <li><a target="_blank" href="https://www.youtube.com/watch?v=HbBMp6yUXO0">Kevin Powell Responsive Navbar</a></li>
   <li><a target="_blank" href="https://scrimba.com/learn/spacetravel">Kevin Powell Srimba Space Travel Course</a>
-  <li><sub>The figma design</sub></li>
 </ul>
 
 
